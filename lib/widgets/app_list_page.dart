@@ -27,6 +27,7 @@ class AppList extends StatelessWidget {
   Widget build(BuildContext context) {
     final searchField = CustomSearchBar();
     return AppScaffold(
+      backgroundColor: const Color(0xFFFCF5DF),
         appBar: CustomAppBar(
           pageTitle: 'POB',
           actions: [

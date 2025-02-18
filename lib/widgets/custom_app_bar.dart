@@ -12,7 +12,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      surfaceTintColor: const Color(0xFFF7DA93),
+      backgroundColor: const Color(0xFFFCF5DF),
       title: Padding(
         padding: EdgeInsets.only(right: 28.0),
         child: Text(

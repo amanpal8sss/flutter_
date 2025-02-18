@@ -11,6 +11,7 @@ class PobPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
+      backgroundColor: const Color(0xFFFCF5DF),
       appBar: CustomAppBar(
         pageTitle: 'POB Details',
         actions: [
@@ -38,12 +39,9 @@ class PobPage extends StatelessWidget {
                   headerLabel: '18 Feb 2025',
                   content: [
                     KeyValuePair(key: 'Doctor', value: 'Dr. Amir Dahliwal'),
-                    KeyValuePair(key: 'Chemist', value: 'Moiz Pharmacy'),
-                    KeyValuePair(key: 'Product', value: 'Moiz'),
-                    KeyValuePair(key: 'Quantity', value: '45'),
-                    KeyValuePair(key: 'Potential Qty.', value: '100'),
-                    KeyValuePair(key: 'Objective Qty.', value: '120'),
-                    KeyValuePair(key: 'Customer action', value: 'Converted'),
+                    KeyValuePair(key: 'Speciality', value: 'Dermatalogist'),
+                    KeyValuePair(key: 'Area', value: 'Lower Parel'),
+                    
                   ]),
                    Padding(padding: const EdgeInsets.symmetric(vertical: 22.0).copyWith(left: 12.0),
                    child: Text('Prescription Order Booking',

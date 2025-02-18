@@ -17,7 +17,7 @@ class CustomSearchBar extends StatelessWidget {
           Expanded(
             child: TextField(
               decoration: InputDecoration(
-                hintText: "Doctor or Chemist",
+                hintText: "Doctor name",
                 border: InputBorder.none,
               ),
             ),

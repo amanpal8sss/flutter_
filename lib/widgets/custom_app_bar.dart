@@ -14,7 +14,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       surfaceTintColor: const Color(0xFFF7DA93),
       title: Padding(
-        padding: EdgeInsets.only(left: 15.0),
+        padding: EdgeInsets.only(right: 28.0),
         child: Text(
           pageTitle,
           style: const TextStyle(

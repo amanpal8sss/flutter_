@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:pob_ui/core/navigation.dart';
+import 'package:pob_ui/widgets/app_custom_dialog_card.dart';
 const appTitle = 'POB';
 
 void showMyDialog(BuildContext context) {
     showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        return AlertDialog(
-          title: Text("Dialog Title"),
-          content: Text("This is a simple dialog popup in Flutter."),
-          actions: [
-            TextButton(
-              onPressed: () {
-                Navigator.of(context).pop(); // Close the dialog
-              },
-              child: Text("Close"),
-            ),
-          ],
-        );
-      },
-    );
+  context: context,
+  builder: (context) => NewPOBWidget(
+    onCancel: () => Navigator.pop(context),
+    onProceed: () {
+      // Handle proceed action
+      Navigator.of(context).pushNamed(newPobPageRoute);
+    },
+  ),
+);
+
   }

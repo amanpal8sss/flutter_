@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pob_ui/core/constants.dart';
 import 'package:pob_ui/widgets/app_bar_custom_button.dart';
 import 'package:pob_ui/widgets/app_scaffold.dart';
 import 'package:pob_ui/widgets/custom_app_bar.dart';
@@ -37,7 +38,7 @@ class AppList extends StatelessWidget {
                 labelText: 'New',
                 icon: Icons.add,
                 onPressed: () =>
-                    Navigator.of(context).pushNamed(newFormPageRouteName),
+                    showMyDialog(context),
               ),
             ),
           ],

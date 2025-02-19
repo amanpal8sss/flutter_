@@ -38,7 +38,7 @@ class CustomAppCardHead extends StatelessWidget {
                   topRight: borderRadius,
                 ),
                 child: ColoredBox(
-                  color: const Color(0xFFFBF3D8),
+                  color: const Color(0xFFF8EBCB),
                   child: Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: Row(
@@ -47,13 +47,15 @@ class CustomAppCardHead extends StatelessWidget {
                        Text(
                         headerLabel1,
                         style: TextStyle(
-                          color: Colors.black45,
+                           fontWeight: FontWeight.bold,
+                          color: Colors.black,
                         ),
                       ),
                        Text(
                         headerLabel2,
                         style: TextStyle(
-                          color: Colors.black45,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
                         ),
                       ),
                       ],
@@ -91,7 +93,7 @@ class CustomAppCardHead extends StatelessWidget {
                           content[i].value,
                           style: TextStyle(
                             fontSize: 16.5,
-                            color: const Color(0xFF6F6D7D),
+                            color:  Colors.black,
                           ),
                           textAlign: TextAlign.end,
                          ))

@@ -50,7 +50,7 @@ class PobPage extends StatelessWidget {
                    style: TextStyle(
                     fontSize: 16.5,
                     fontWeight: FontWeight.bold,
-                    color: Colors.black45,
+                    color: Colors.black,
                    ),
                    ),
                    ), 

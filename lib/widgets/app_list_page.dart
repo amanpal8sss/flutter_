@@ -94,7 +94,7 @@ class AppList extends StatelessWidget {
                     subtitleText: subtitleText,
                   ),
                 ),
-                itemCount: 20,
+                itemCount: 7,
                 separatorBuilder: (_, i) => const ListingDivider(),
               ),
             ),

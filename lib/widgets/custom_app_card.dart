@@ -36,7 +36,7 @@ class CustomAppCard extends StatelessWidget {
                   topRight: borderRadius,
                 ),
                 child: ColoredBox(
-                  color: const Color(0xFFFBF3D8),
+                  color: const Color(0xFFF8EBCB),
                   child: ListTile(
                     leading: Icon(
                       headerIcon,
@@ -81,7 +81,7 @@ class CustomAppCard extends StatelessWidget {
                           content[i].value,
                           style: TextStyle(
                             fontSize: 16.5,
-                            color: const Color(0xFF6F6D7D),
+                            color:  Colors.black,
                           ),
                           textAlign: TextAlign.end,
                          ))

@@ -34,7 +34,7 @@ class AppBarActionButton extends StatelessWidget {
                 ? Text(
                     labelText,
                     style: TextStyle(
-                      color: Colors.black45,
+                      color: Colors.black,
                     ),
                   )
                 : IntrinsicHeight(
@@ -44,14 +44,14 @@ class AppBarActionButton extends StatelessWidget {
                           padding: const EdgeInsets.only(right: 5.0),
                           child: Icon(
                             icon,
-                            color:  Colors.black45,
+                            color:  Colors.black,
                             size: 15.0,
                           ),
                         ),
                         Text(
                           labelText,
                           style: TextStyle(
-                            color:  Colors.black45,
+                            color:  Colors.black,
                           ),
                         ),
                       ],

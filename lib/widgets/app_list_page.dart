@@ -26,7 +26,9 @@ class AppList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final searchField = CustomSearchBar();
+    final searchField = CustomSearchBar(
+      hintText: "select doctor",
+    );
     return AppScaffold(
       backgroundColor: const Color(0xFFFCF5DF),
         appBar: CustomAppBar(
@@ -95,7 +97,7 @@ class AppList extends StatelessWidget {
                     subtitleText: subtitleText,
                   ),
                 ),
-                itemCount: 20,
+                itemCount: 12,
                 separatorBuilder: (_, i) => const ListingDivider(),
               ),
             ),

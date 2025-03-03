@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pob_ui/models/key_value_pair.dart';
 import 'package:pob_ui/widgets/app_bar_custom_button.dart';
-import 'package:pob_ui/widgets/app_card_bottom.dart';
 import 'package:pob_ui/widgets/app_scaffold.dart';
 import 'package:pob_ui/widgets/custom_app_bar.dart';
 import 'package:pob_ui/widgets/custom_app_card.dart';

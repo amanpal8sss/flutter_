@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:pob_ui/models/products_screen_model.dart';
-import 'package:pob_ui/widgets/app_scaffold.dart';
-import 'package:pob_ui/widgets/custom_app_bar.dart';
 import 'package:pob_ui/widgets/product_quantity_text_field.dart';
 import 'package:pob_ui/widgets/product_text_header.dart';
 

@@ -4,7 +4,8 @@ class NewPOBWidget extends StatelessWidget {
   final VoidCallback onCancel;
   final VoidCallback onProceed;
 
-  const NewPOBWidget({super.key, required this.onCancel, required this.onProceed});
+  const NewPOBWidget(
+      {super.key, required this.onCancel, required this.onProceed});
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +37,10 @@ class NewPOBWidget extends StatelessWidget {
             const SizedBox(height: 8),
             DropdownButtonFormField<String>(
               decoration: InputDecoration(
-                contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-                border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
+                contentPadding:
+                    const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+                border:
+                    OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
               ),
               hint: const Text("Select doctor"),
               items: const [
@@ -53,19 +56,25 @@ class NewPOBWidget extends StatelessWidget {
                 OutlinedButton(
                   onPressed: onCancel,
                   style: OutlinedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 12),
+                    shape: const StadiumBorder(),
+                    side: const BorderSide(
+                        color: const Color(0xFFAA3F00),
+                        width: 1), // Set border color to orange
                   ),
                   child: const Text("Cancel"),
                 ),
                 ElevatedButton(
                   onPressed: onProceed,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.brown,
-                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                    backgroundColor: const Color(0xFFAA3F00),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 12),
+                   shape: const StadiumBorder(),
                   ),
-                  child: const Text("Proceed", style: TextStyle(color: Colors.white)),
+                  child: const Text("Proceed",
+                      style: TextStyle(color: Colors.white)),
                 ),
               ],
             ),

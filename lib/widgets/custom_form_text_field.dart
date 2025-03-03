@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomSearchBar extends StatelessWidget {
-  const CustomSearchBar({super.key});
+  final String hintText;
+  const CustomSearchBar({super.key,required this.hintText});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class CustomSearchBar extends StatelessWidget {
           Expanded(
             child: TextField(
               decoration: InputDecoration(
-                hintText: "Doctor name",
+                hintText: hintText,
                 border: InputBorder.none,
               ),
             ),

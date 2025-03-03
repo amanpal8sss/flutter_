@@ -5,6 +5,7 @@ class AppScaffold extends StatelessWidget {
   final PreferredSizeWidget? appBar;
   final Color? backgroundColor;
   final Widget? body;
+  
   const AppScaffold({
     super.key,
     this.backgroundColor,

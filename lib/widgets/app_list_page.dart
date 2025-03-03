@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pob_ui/core/constants.dart';
 import 'package:pob_ui/widgets/app_bar_custom_button.dart';
 import 'package:pob_ui/widgets/app_scaffold.dart';
 import 'package:pob_ui/widgets/custom_app_bar.dart';
@@ -25,7 +26,9 @@ class AppList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final searchField = CustomSearchBar();
+    final searchField = CustomSearchBar(
+      hintText: "select doctor",
+    );
     return AppScaffold(
       backgroundColor: const Color(0xFFFCF5DF),
         appBar: CustomAppBar(
@@ -37,7 +40,7 @@ class AppList extends StatelessWidget {
                 labelText: 'New',
                 icon: Icons.add,
                 onPressed: () =>
-                    Navigator.of(context).pushNamed(newFormPageRouteName),
+                    showMyDialog(context),
               ),
             ),
           ],
@@ -95,6 +98,7 @@ class AppList extends StatelessWidget {
                   ),
                 ),
                 itemCount: 7,
+
                 separatorBuilder: (_, i) => const ListingDivider(),
               ),
             ),

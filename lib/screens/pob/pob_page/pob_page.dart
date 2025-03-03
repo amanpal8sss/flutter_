@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pob_ui/models/key_value_pair.dart';
 import 'package:pob_ui/widgets/app_bar_custom_button.dart';
-import 'package:pob_ui/widgets/app_card_bottom.dart';
 import 'package:pob_ui/widgets/app_scaffold.dart';
 import 'package:pob_ui/widgets/custom_app_bar.dart';
 import 'package:pob_ui/widgets/custom_app_card.dart';
@@ -54,18 +53,7 @@ class PobPage extends StatelessWidget {
                    ),
                    ),
                    ), 
-                    CustomAppCardHead(
-                  headerLabel1: 'Product',
-                  headerLabel2: 'Order Qty',
-                  content: [
-                    KeyValuePair(key: 'Doctor', value: 'Dr. Amir Dahliwal'),
-                    KeyValuePair(key: 'Speciality', value: 'Dermatalogist'),
-                    KeyValuePair(key: 'Area', value: 'Lower Parel'),
-                    
-                  ],
-                  child:AppCardBottom(content1: 'Total Value', content2: 'Rs 12,000',),
-
-                  ),
+                 const ProductDetailingCard(),
             ],
            
           ),

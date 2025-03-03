@@ -17,7 +17,7 @@ class PobNewPage extends StatelessWidget {
     return AppScaffold(
       backgroundColor: const Color(0xFFFCF5DF),
       appBar: CustomAppBar(
-        pageTitle: 'New',
+        pageTitle: 'New POB',
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 28.0),

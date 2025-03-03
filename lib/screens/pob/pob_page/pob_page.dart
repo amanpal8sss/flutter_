@@ -54,18 +54,7 @@ class PobPage extends StatelessWidget {
                    ),
                    ),
                    ), 
-                    CustomAppCardHead(
-                  headerLabel1: 'Product',
-                  headerLabel2: 'Order Qty',
-                  content: [
-                    KeyValuePair(key: 'Doctor', value: 'Dr. Amir Dahliwal'),
-                    KeyValuePair(key: 'Speciality', value: 'Dermatalogist'),
-                    KeyValuePair(key: 'Area', value: 'Lower Parel'),
-                    
-                  ],
-                  child:AppCardBottom(content1: 'Total Value', content2: 'Rs 12,000',),
-
-                  ),
+                 const ProductDetailingCard(),
             ],
            
           ),

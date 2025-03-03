@@ -98,7 +98,7 @@ class AppList extends StatelessWidget {
                   ),
                 ),
                 itemCount: 7,
-                itemCount: 12,
+
                 separatorBuilder: (_, i) => const ListingDivider(),
               ),
             ),

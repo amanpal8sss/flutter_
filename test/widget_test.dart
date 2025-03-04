@@ -32,11 +32,20 @@ Future<void> appTest(WidgetTester tester) async {
   //expect the selected doctor from the dropdown
   expect(find.text('Dr. Johnson'), findsOneWidget);
   //click on the cancel button
+  // await tester.tap(find.text('Cancel'));
+  // await tester.pumpAndSettle();
+  // expect(find.byType(PobList), findsOneWidget);
+ 
+  //on clicking the proceed button, the new pob page will appear (this test is pending)
+  await tester.tap(find.byKey(proceedButtonKey));
+  await tester.pumpAndSettle(); 
+  expect(find.byType(PobNewPage), findsOneWidget);
+  //click on back arrow to move from new pob page to pob list page
+  await tester.tap(find.byIcon(Icons.arrow_back));
+  await tester.pumpAndSettle();
   await tester.tap(find.text('Cancel'));
   await tester.pumpAndSettle();
   expect(find.byType(PobList), findsOneWidget);
- 
-  //on clicking the proceed button, the new pob page will appear (this test is pending)
 }
 
 

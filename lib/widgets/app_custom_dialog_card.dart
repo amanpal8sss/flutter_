@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../core/widgets_keys.dart';
 class NewPOBWidget extends StatelessWidget {
   final VoidCallback onCancel;
   final VoidCallback onProceed;
@@ -36,6 +36,7 @@ class NewPOBWidget extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             DropdownButtonFormField<String>(
+              key: dropDownKey,
               decoration: InputDecoration(
                 contentPadding:
                     const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
@@ -66,6 +67,7 @@ class NewPOBWidget extends StatelessWidget {
                   child: const Text("Cancel"),
                 ),
                 ElevatedButton(
+                  key: proceedButtonKey,
                   onPressed: onProceed,
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFFAA3F00),
